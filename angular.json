@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cargo-mania": {
+    "cargo-mania-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cargo-mania",
+            "outputPath": "dist/cargo-mania-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cargo-mania:build:production"
+              "browserTarget": "cargo-mania-ui:build:production"
             },
             "development": {
-              "browserTarget": "cargo-mania:build:development"
+              "browserTarget": "cargo-mania-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cargo-mania:build"
+            "browserTarget": "cargo-mania-ui:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "cargo-mania"
+  "defaultProject": "cargo-mania-ui"
 }
